@@ -1,11 +1,10 @@
-﻿using ByteBank_ADM;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank_ADM.Empleados
+namespace ByteBank.Modelos
 {
     public abstract class Empleado
     {
@@ -27,7 +26,7 @@ namespace ByteBank_ADM.Empleados
 
         
 
-        public abstract double obtenerBonificacion();
+        internal protected abstract double obtenerBonificacion();
 
         public virtual void aumentarSalario()
         {

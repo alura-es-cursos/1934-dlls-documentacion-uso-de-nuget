@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ByteBank.DatosCliente;
 
-namespace ByteBank
+namespace ByteBank.Modelos
 {
+    /// <summary>
+    /// Esta clase define el modelo de las cuentas bancarias de ByteBank
+    /// </summary>
     public class CuentaBancaria
     {
         //Atributos de la clase
@@ -17,6 +19,11 @@ namespace ByteBank
         public string _numero_agencia;
         private double _saldo;
 
+        /// <summary>
+        /// Constructor de la clase CuentaBancaria de ByteBank
+        /// </summary>
+        /// <param name="_numero_cuenta">El parametro <see cref="_numero_cuenta"/> almacena el número de la cuenta bancaria. No puede ser vacío</param>
+        /// <param name="_numero_agencia">El parametro <see cref="_numero_agencia"/> almacena el número de la agencia donde está la cuenta bancaria. No puede ser vacío</param>
         public CuentaBancaria(string _numero_cuenta, string _numero_agencia)
         {
             NumeroCuenta = _numero_cuenta;

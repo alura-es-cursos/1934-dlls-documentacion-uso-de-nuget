@@ -1,14 +1,14 @@
-﻿using ByteBank_ADM.Empleados;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank_ADM.EmpleadoAutenticables
+namespace ByteBank.Modelos
 {
     public class EmpleadoAutenticable:Empleado
     {
+        internal AutenticableHelper _helper = new AutenticableHelper();
         public EmpleadoAutenticable(string _Dni, double _Salario) : base(_Dni, _Salario)
         {
         }
@@ -16,10 +16,10 @@ namespace ByteBank_ADM.EmpleadoAutenticables
         public string Clave { get; set; }
         public bool autenticarUsuario(string clave)
         {
-            return this.Clave == clave;
+            return _helper.compararClave(Clave, clave);
         }
 
-        public override double obtenerBonificacion()
+        internal protected override double obtenerBonificacion()
         {
             return 0;
         }

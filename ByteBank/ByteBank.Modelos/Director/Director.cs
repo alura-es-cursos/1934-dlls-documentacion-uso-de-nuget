@@ -1,13 +1,11 @@
-﻿using ByteBank_ADM.Autenticables;
-using ByteBank_ADM.EmpleadoAutenticables;
-using ByteBank_ADM.Empleados;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank_ADM.Directores
+namespace ByteBank.Modelos
 {
     public class Director: EmpleadoAutenticable, IAutenticable
     {
@@ -19,7 +17,7 @@ namespace ByteBank_ADM.Directores
         
         public string Departamento { get; set; }
 
-        public override double obtenerBonificacion()
+        internal protected override double obtenerBonificacion()
         {
             return this.Salario * 0.50;
 

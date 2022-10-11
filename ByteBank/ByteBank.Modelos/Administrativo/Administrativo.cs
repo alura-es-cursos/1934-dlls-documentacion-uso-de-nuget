@@ -1,11 +1,11 @@
-﻿using ByteBank_ADM.Empleados;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank_ADM.Administrativo
+namespace ByteBank.Modelos
 {
     public class Administrativo : Empleado
     {
@@ -14,7 +14,7 @@ namespace ByteBank_ADM.Administrativo
             Console.WriteLine("Constructor Administrativo");
         }
 
-        public override double obtenerBonificacion()
+        internal protected override double obtenerBonificacion()
         {
             return this.Salario * 0.15;
         }

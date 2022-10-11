@@ -1,18 +1,19 @@
-﻿using ByteBank_ADM.Autenticables;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank_ADM.SocioComerciales
+
+namespace ByteBank.Modelos
 {
     public class SocioComercial : IAutenticable
     {
         public string Clave { get; set; }
+        internal AutenticableHelper _helper = new AutenticableHelper();
         public bool autenticarUsuario(string clave)
         {
-            return this.Clave == clave;
+            return _helper.compararClave(Clave, clave);
         }
     }
 }

@@ -1,13 +1,10 @@
-﻿using ByteBank_ADM.Autenticables;
-using ByteBank_ADM.EmpleadoAutenticables;
-using ByteBank_ADM.Empleados;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank_ADM.Analistas
+namespace ByteBank.Modelos
 {
     public class Analista: EmpleadoAutenticable, IAutenticable
     {
@@ -16,7 +13,7 @@ namespace ByteBank_ADM.Analistas
             Console.WriteLine("Constructor Analista");
         }
 
-        public override double obtenerBonificacion()
+        internal protected override double obtenerBonificacion()
         {
             return this.Salario * 0.20;
         }
