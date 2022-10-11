@@ -43,7 +43,9 @@ namespace ByteBank.Modelos
 
         //Propiedades
  
-
+        /// <summary>
+        /// Esta propiedad hace referencia a la instancia de Cliente
+        /// </summary>
         public Cliente Cliente
         {
             get;set;
@@ -108,7 +110,13 @@ namespace ByteBank.Modelos
 
         //Métodos
 
-        //Método RetirarDinero
+        /// <summary>
+        /// Este método permite disminuir el saldo de la cuenta a partir de un retiro.
+        /// </summary>
+        /// <param name="valorARetirar">Es el valor a retirar de la cuenta.</param>
+        /// <returns></returns>
+        /// <exception cref="SaldoInsuficienteException">Esta excepción es generada cuando se intenta retirar un valor mayor al saldo disponible</exception>
+        /// <exception cref="ArgumentException">Se dispara la excepción cuando se intenta hacer un retiro de un valor negativo</exception>
         public bool RetirarDinero(double valorARetirar)
         {
 

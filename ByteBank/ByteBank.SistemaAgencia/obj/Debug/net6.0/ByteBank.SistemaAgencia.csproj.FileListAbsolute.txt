@@ -16,3 +16,4 @@ C:\CursoCSharp5\ByteBank\ByteBank.SistemaAgencia\obj\Debug\net6.0\ref\ByteBank.S
 C:\CursoCSharp5\ByteBank\ByteBank.SistemaAgencia\bin\Debug\net6.0\ByteBank.Modelos.dll
 C:\CursoCSharp5\ByteBank\ByteBank.SistemaAgencia\bin\Debug\net6.0\ByteBank.Modelos.pdb
 C:\CursoCSharp5\ByteBank\ByteBank.SistemaAgencia\obj\Debug\net6.0\ByteBank.SistemaAgencia.csproj.CopyComplete
+C:\CursoCSharp5\ByteBank\ByteBank.SistemaAgencia\bin\Debug\net6.0\ByteBank.Modelos.xml
