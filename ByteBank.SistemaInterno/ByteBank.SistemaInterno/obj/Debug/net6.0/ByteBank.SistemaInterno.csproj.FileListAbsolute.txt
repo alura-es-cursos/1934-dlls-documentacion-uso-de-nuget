@@ -1,0 +1,17 @@
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\ByteBank.SistemaInterno.csproj.AssemblyReference.cache
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\ByteBank.SistemaInterno.GeneratedMSBuildEditorConfig.editorconfig
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\ByteBank.SistemaInterno.AssemblyInfoInputs.cache
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\ByteBank.SistemaInterno.AssemblyInfo.cs
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\ByteBank.SistemaInterno.csproj.CoreCompileInputs.cache
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\net6.0\ByteBank.SistemaInterno.exe
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\net6.0\ByteBank.SistemaInterno.deps.json
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\net6.0\ByteBank.SistemaInterno.runtimeconfig.json
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\net6.0\ByteBank.SistemaInterno.dll
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\net6.0\ByteBank.SistemaInterno.pdb
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\net6.0\ByteBank.Modelos.dll
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\ByteBank.SistemaInterno.csproj.CopyComplete
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\ByteBank.SistemaInterno.dll
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\refint\ByteBank.SistemaInterno.dll
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\ByteBank.SistemaInterno.pdb
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\ByteBank.SistemaInterno.genruntimeconfig.cache
+C:\CursoCSharp5\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\net6.0\ref\ByteBank.SistemaInterno.dll

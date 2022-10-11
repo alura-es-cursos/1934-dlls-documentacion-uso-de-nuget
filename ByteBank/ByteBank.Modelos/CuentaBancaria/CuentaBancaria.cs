@@ -26,6 +26,14 @@ namespace ByteBank.Modelos
         /// <param name="_numero_agencia">El parametro <see cref="_numero_agencia"/> almacena el número de la agencia donde está la cuenta bancaria. No puede ser vacío</param>
         public CuentaBancaria(string _numero_cuenta, string _numero_agencia)
         {
+            if (_numero_agencia == "")
+            {
+                throw new ArgumentException("Es necesario indicar el número de agencia",nameof(_numero_agencia));
+            }
+            if (_numero_cuenta == "")
+            {
+                throw new ArgumentException("Es necesario indicar el número de cuenta", nameof(_numero_cuenta));
+            }
             NumeroCuenta = _numero_cuenta;
             NumeroAgencia = _numero_agencia;
 
@@ -60,6 +68,9 @@ namespace ByteBank.Modelos
                     _numero_agencia = value;
             }
         }
+        public int cantidadRetirosSinSaldo { get; private set; }
+
+        public int cantidadTransferenciasSinSaldo { get; private set; }
 
 
         public double Saldo
@@ -92,6 +103,7 @@ namespace ByteBank.Modelos
             get; set;
         }
 
+        public double ValorComision { get; private set; }
 
 
         //Métodos
@@ -102,12 +114,13 @@ namespace ByteBank.Modelos
 
             if (Saldo < valorARetirar)
             {
-                Console.WriteLine("No hay saldo suficiente para el retiro");
-                return false;
+                //Console.WriteLine("No hay saldo suficiente para el retiro");
+                //return false;
+                this.cantidadRetirosSinSaldo++;
+                throw new SaldoInsuficienteException("No hay saldo suficiente para el retiro. Saldo Actual:"+Saldo+" - Monto a retirar:"+valorARetirar);
             } else if (valorARetirar <= 0)
             {
-                Console.WriteLine("El valor a retirar debe ser mayor a 0");
-                return false;
+                throw new ArgumentException("No hay saldo suficiente para el retiro. Saldo Actual:"+Saldo+" - Monto a retirar:"+valorARetirar);
             }
 
             //saldo = saldo - valorARetirar;
@@ -132,7 +145,16 @@ namespace ByteBank.Modelos
         public double TransferirSaldo(double valorATransferir, CuentaBancaria cuentaReceptora)
         {
             //Retiramos el saldo de la cuenta origen
-            RetirarDinero(valorATransferir);
+            try
+            {
+                RetirarDinero(valorATransferir);
+            }
+            catch (SaldoInsuficienteException ex)
+            {
+                this.cantidadTransferenciasSinSaldo++;
+                throw new OperacionesFinancierasException("Transferencia no realizada", ex);
+            }
+            
 
             cuentaReceptora.DepositarDinero(valorATransferir);
 
